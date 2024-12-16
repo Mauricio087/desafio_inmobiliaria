@@ -1,7 +1,6 @@
 function renderizarPropiedades(propiedades, contenedor, limite = propiedades.length) {
-  const container = document.querySelector(contenedor);
-  let html = "";
-  
+const container = document.querySelector(contenedor);
+let html = "";
   for (let i = 0; i < Math.min(propiedades.length, limite); i++) {
     const prop = propiedades[i];
     html += `
@@ -25,8 +24,8 @@ function renderizarPropiedades(propiedades, contenedor, limite = propiedades.len
           </div>
         </div>
       </div>
-      `;
-    }
+    `;
+  }
 
   container.innerHTML = html;
 }
